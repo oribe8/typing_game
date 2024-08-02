@@ -1,0 +1,64 @@
+main {
+  width: 500px;
+  height: 350px;
+  margin: 50px auto 0 auto;
+  border: 1px solid #000;
+}
+main .typingTitle {
+  text-align: center;
+  padding-top: 100px;
+}
+main .startButton {
+  display: block;
+  width: 100px;
+  margin: 40px auto 50px;
+  border: 1px solid #000;
+  padding: 2%;
+}
+main .startButton:hover {
+  opacity: 0.5;
+}
+main .qHeader {
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .question {
+  background-color: gray;
+  width: 80%;
+  margin: 10px auto 0;
+  text-align: center;
+  font-size: 20px;
+}
+main form {
+  background-color: gray;
+  width: 80%;
+  margin: 20px auto 0;
+  font-size: 20px;
+}
+main form input[type=text] {
+  width: 100%;
+  text-align: center;
+}
+main .result {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+main .result span {
+  color: red;
+  font-weight: bold;
+}
+main .restartButton {
+  display: block;
+  width: 100px;
+  margin: 40px auto 50px;
+  border: 1px solid #000;
+  padding: 2%;
+}
+main .restartButton:hover {
+  opacity: 0.5;
+}/*# sourceMappingURL=base.css.map */
