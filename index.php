@@ -16,15 +16,26 @@ $json_wordList = json_encode($wordList);
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/base.css">
     <title>タイピングゲーム</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWQVKQDXHL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JWQVKQDXHL');
+    </script>
+    <!-- Google tag (gtag.js) -->
 </head>
 <body>
     <main>
         <h1 class="typingTitle">タイピングゲーム</h1>
         <button class="startButton">スタート</button>
-        <script>
-            let tangoList = <?php echo $json_wordList; ?>;
-        </script>
-        <script src="js/script.js"></script>
     </main>
+    <script>
+        let tangoList = <?php echo $json_wordList; ?>;
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
