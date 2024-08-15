@@ -1,12 +1,12 @@
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=keijiban;charset=utf8','staff2','password');
 $i = 0;
-$sql = $pdo -> query('SELECT keyword FROM wordlist');
+$sql = $pdo -> query('SELECT keyword FROM wordlist'); //wordlistテーブルからkeyword列を取り出す
 foreach($sql as $item) {
-    $wordList[$i] = $item['keyword'];
+    $wordList[$i] = $item['keyword']; //wordList配列へkeyword列の値を出力
     $i++;
 }
-$json_wordList = json_encode($wordList);
+$json_wordList = json_encode($wordList); //JSON形式にエンコードしたwordList配列をjson_wordListへ格納
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -34,7 +34,7 @@ $json_wordList = json_encode($wordList);
         <button class="startButton">スタート</button>
     </main>
     <script>
-        let tangoList = <?php echo $json_wordList; ?>;
+        let tangoList = <?php echo $json_wordList; ?>; //JS側の配列へ、php側で作成したjson_wordListを格納する
     </script>
     <script src="js/script.js"></script>
 </body>
